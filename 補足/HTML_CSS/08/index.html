@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>練習</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contact">
+        <form>
+            <!-- テキスト -->
+            <div class="form-group">
+                <label for="" class="label">お名前</label>
+                <input type="text" class="input-field">
+            </div>
+
+            <!-- ラジオボタン -->
+            <div class="form-group">
+                <span class="label">性別</span>
+                <span class="input-field">
+                    <label for="male">
+                        <input type="radio" id="male" name="gender">
+                        男性
+                    </label>
+                    <label for="female">
+                        <input type="radio" id="female" name="gender">
+                        女性
+                    </label>  
+                </span>
+            </div>
+
+            <!-- セレクトボックス -->
+            <div class="form-group">
+                <span class="label">出身</span>
+                <span class="input-field">
+                    <select name="" id="">
+                        <option value="1">東京</option>
+                        <option value="2">千葉</option>
+                        <option value="3">神奈川</option>
+                    </select>
+                </span>
+            </div>
+
+            <!-- チェックボックス -->
+            <div class="form-group">
+                <span class="label">話せる言語</span>
+                <span class="input-field">
+                    <label for="english">
+                        <input type="checkbox" id="english" name="language">英語
+                    </label>
+                    <label for="japanese">
+                        <input type="checkbox" id="japanese" name="language">日本語
+                    </label>
+                </span>
+            </div>
+
+            <!-- ボタン -->
+            <div class="form-group">
+                <button type="submit" name="btn" class="button">送信</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

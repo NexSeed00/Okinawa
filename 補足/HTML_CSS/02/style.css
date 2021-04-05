@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: red;
+  height: 100px;
+  width: 800px;
+}
+
+.sidebar {
+  float: left;
+  background-color: yellow;
+  height: 400px;
+  width: 200px;
+}
+
+.main {
+  float: right;
+  background-color: blue;
+  height: 400px;
+  width: 600px;
+}
+
+.footer {
+  background-color: green;
+  height: 100px;
+  width: 800px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}

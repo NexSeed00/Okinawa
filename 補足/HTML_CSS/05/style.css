@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+.container {
+  margin: 0 auto;
+  padding-top: 100px;
+  background-color: #888;
+  height: 800px;
+  width: 1200px;
+}
+
+.box {
+  text-align: center;
+  font-size: 0px;
+}
+
+.box li {
+  background-color: #fff;
+  padding: 10px;
+  font-size: 30px;
+  color: #f00;
+  width: 20%;
+  display: inline-block;
+  word-break: break-all;
+  box-sizing: border-box;
+  border: 5px solid #000;
+}
+
+.box li:nth-child(1) {
+  margin-right: 5%;
+}
+
+.box li:nth-child(2) {
+  margin-right: 5%;
+}
+
+.box li:nth-child(3) {
+  margin-right: 5%;
+}

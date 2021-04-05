@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>welcome NexSeed Okinawa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- header -->
+  <header id="fixed">
+    <!-- header左側 -->
+    <div class="icon">
+      <img src="img/seedkun.png" alt="Seedkun">
+      <span class="name"><strong>Seed</strong>Kun</span>
+    </div>
+    <!-- header右側 -->
+    <ul class="header-right">
+      <li class="js-register">新規登録</li>
+      <li class="js-login">ログイン</li>
+    </ul>
+    <!-- ハンバーガーメニュー -->
+    <div id="toggle" class="js-hamburger hamburger">
+      <span></span>
+    </div>
+    <!-- ドロワー -->
+    <div id="drower-bg"></div>
+    <ul class="drower js-drower">
+      <li class="js-register">新規登録</li>
+      <li class="js-login">ログイン</li>
+    </ul>
+
+  </header>
+  <!-- headerここまで -->
+
+  <!-- welcome -->
+  <main class="welcome" id="margin-for-fixed">
+    <h1 class="title">Welcome to NexSeed Okinawa</h1>
+    <ul class="guideline">
+      <li>Be Athlete</li>
+      <li>Go World</li>
+      <li>Enjoy Everything</li>
+    </ul>
+    <div class="btn-group">
+      <button class="btn register js-register">新規登録</button>
+      <button class="btn login js-login">ログイン</button>
+    </div>
+  </main>
+  <!-- welcomeここまで -->
+
+  <!-- curriculum -->
+  <main class="curriculum">
+    <h2 class="sub-title">NexSeed Life</h2>
+    <div class="swiper-container">
+      <ul class="img-box swiper-wrapper">
+        <li class="swiper-slide">
+          <img src="img/programming.jpg" alt="">
+          <span>programing</span>
+        </li>
+        <li class="swiper-slide">
+          <img src="img/english.jpg" alt="">
+          <span>English</span>
+        </li>
+        <li class="swiper-slide">
+          <img src="img/enjoy.jpg" alt="">
+          <span>Enjoy</span>
+        </li>
+      </ul>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    <ul class="img-box small-only">
+      <li>
+        <img src="img/programming.jpg" alt="">
+        <span>programing</span>
+      </li>
+      <li>
+        <img src="img/english.jpg" alt="">
+        <span>English</span>
+      </li>
+      <li>
+        <img src="img/enjoy.jpg" alt="">
+        <span>Enjoy</span>
+      </li>
+    </ul>
+  </main>
+  <!-- curriculumここまで -->
+
+  <!-- contact -->
+  <aside class="contact">
+    <h2 class="sub-title">contact us</h2>
+    <!-- form -->
+    <form action="">
+      <div class="form">
+        <!-- 左側のフォーム -->
+        <div class="form-left">
+          <fieldset>
+            <input  class="name" type="text" placeholder="お名前">
+          </fieldset>
+          <fieldset>
+            <input  class="email" type="email" placeholder="メールアドレス">
+          </fieldset>
+        </div>
+        <!-- 右側のフォーム -->
+        <fieldset>
+          <textarea  class="inquiry" name="" placeholder="お問い合わせ内容"></textarea>
+        </fieldset>
+      </div>
+      <button id="hoge">submit</button>
+    </form>
+  </aside>
+  <!-- contactここまで -->
+
+  <!-- footer -->
+  <footer>
+    <!-- footer左側 -->
+    <div class="icon">
+      <img src="img/seedkun.png" alt="Seedkun">
+      <span class="name"><strong>Seed</strong>Kun</span>
+    </div>
+    <!-- footer右側 -->
+    <p class="footer-right">Copyright (c) SeedKun inc</p>
+  </footer>
+
+  <!-- modal window  -->
+  <div class="modal-content">
+    <div class="modal-close">
+      <span class="js-modal-close">×</span>
+    </div>
+    <form class="modal-form">
+      <input class="modal-form-email" type="email" placeholder="メールアドレス">
+      <input class="modal-form-password" type="password" placeholder="パスワード">
+      <button id="js-modal-form-btn" class="modal-form-btn register">登録</button>
+    </form>
+  </div>
+  <div id="modal-bg" class="js-modal-close"></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

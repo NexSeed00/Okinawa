@@ -1,0 +1,570 @@
+
+/* header固定 */
+/* 
+ 本来はidで実施する必要はない
+ 今回はidの使い方も覚えるため実施
+*/
+
+#fixed {
+  position: fixed;
+  width: 100%;
+  margin-top: -70px;
+  z-index: 10;
+}
+
+#margin-for-fixed {
+  margin-top: 70px;
+}
+/* header固定ここまで */
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1dace0;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 0;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin-left: 80px;
+}
+
+.icon img {
+  height: 60px;
+}
+
+.icon .name strong {
+  color: #eae51f;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  margin-right: 80px;
+}
+
+.header-right li:first-child {
+  margin-right: 20px;
+}
+
+/* headerここまで */
+
+
+/* welcome */
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-image: url(../img/background1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+}
+
+.title{
+  font-size: 64px;
+}
+
+.guideline {
+  margin-top: 50px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.guideline li {
+  margin-top: 16px;
+}
+
+.guideline li:first-child {
+  margin-top: 0px;
+}
+
+.btn-group {
+  margin-top: 60px;
+}
+
+.btn {
+  height: 55px;
+  width: 170px;
+  margin-left: 120px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  font-size: 28px;
+  border-radius: 10px;
+}
+
+.btn:first-child {
+  margin-left: 0;
+}
+
+.register {
+  background-color: rgba(29, 172, 224, .5);
+  border: 3px solid rgba(29, 172, 224, .3);
+}
+
+.register:hover {
+  background-color: rgb(29, 172, 224);
+}
+
+.login {
+  background-color: rgba(236, 227, 35, .5);
+  border: 3px solid rgba(236, 227, 35, .3);
+}
+
+.login:hover {
+  background-color: rgb(236, 227, 35);
+}
+/* welcomeここまで */
+
+
+/* curriculum */
+.curriculum {
+  margin-top: 50px;
+}
+
+.sub-title {
+  text-align: center;
+  font-size: 36px;
+}
+
+.img-box {
+  margin-top: 50px;
+  display: flex;
+}
+
+.img-box li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .img-box li:last-child {
+  margin-right: 0;
+} */
+
+.img-box li img {
+  height: 300px;
+  width: 300px;
+}
+
+.img-box li span {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.small-only {
+    display:none;
+}
+/* curriculumここまで */
+
+/* contact */
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 350px;
+  margin-top: 50px;
+  background-color: #ebf4f5;
+}
+
+.contact .form {
+  margin: 50px 0 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.form .name {
+  margin-bottom: 20px;
+}
+
+.form .name, 
+.form .email {
+  height: 50px;
+  width: 400px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.form-left {
+  margin-right: 50px;
+}
+
+.form .inquiry {
+  height: 120px;
+  width: 400px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.contact button {
+  background-color: #1dace0;
+  color: #fff;
+  border: 3px solid #1dace0;
+  border-radius: 10px;
+  font-size: 24px;
+  padding: 15px 30px;
+  box-sizing: border-box;
+}
+
+.contact button:hover {
+  background-color: #fff;
+  color: #1dace0;
+  transition-duration: 500ms;
+}
+/* contactここまで */
+
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #233f51;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px;
+}
+
+footer .footer-right {
+  margin-right: 80px;
+}
+/* footerここまで */
+
+/* モーダル */
+#modal-bg {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 100;
+}
+
+.modal-content {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -200px;
+  padding: 20px;
+  height: 300px;
+  width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  z-index: 101;
+}
+
+.modal-close {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 30px;
+}
+
+.modal-close > span {
+  cursor: pointer;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 90%;
+}
+
+.modal-form-email,
+.modal-form-password {
+  width: 90%;
+  height: 50px;
+}
+
+.modal-form-btn {
+  padding: 10px 50px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+/* モーダルここまで */
+
+/* swiper */
+.swiper-container {
+  height: 400px;
+  width: 960px;
+}
+/* swiperここまで */
+
+/* ハンバーガーメニュー */
+.hamburger {
+  display: none;
+  width: 28px;
+  align-self: center;
+  margin-right: 20px;
+}
+
+.hamburger span:after,
+.hamburger span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -9px;
+}
+
+.hamburger span:after{
+  top: 9px;
+}
+
+.hamburger span {
+  position: relative;
+  display: block;
+}
+
+.hamburger span,
+.hamburger span:after,
+.hamburger span:before {
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  transition: all 0.5s;    /*←アニメーション*/
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+
+.hamburger.on span {
+  background-color: transparent;
+}
+
+.hamburger.on span:before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.on span:after {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+/* ハンバーガーメニューここまで */
+
+#drower-bg {
+  display: none;
+  position: fixed;
+  top: 70px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.drower {
+  position: absolute;
+  top: 70px;
+  right: -200px;
+  height: 100vh;
+  width: 200px;
+  background-color: rgba(8, 8, 8, .5);
+  transition-duration: 600ms;
+}
+
+.drower.on {
+  right: 0;
+  transition-duration: 600ms;
+}
+
+/* レスポンシブ対応 */
+
+/* 小型PCを想定 */
+@media screen and (max-width: 1280px) {
+  
+  /* .img-box {
+    justify-content: space-around;
+  }
+
+  .img-box li {
+    margin-right: 30px;
+  } */
+
+}
+
+/* タブレットを想定 */
+@media screen and (max-width: 960px) {
+
+  /* curriculum */
+  .img-box {
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+
+  .img-box li {
+    margin-top: 30px;
+    margin-right: 0;
+  }
+  /* curriculumここまで */
+
+  /* contact */
+  .contact {
+    height: 100%;
+    padding: 40px 20px;
+  }
+
+  .contact .form {
+    flex-flow: column nowrap;
+    margin: 30px 0;
+  }
+
+  .form-left {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .form .name, 
+  .form .email {
+    width: 80%;
+  }
+
+  .form .inquiry {
+    width: 80%;
+  }
+
+  .contact button {
+    font-size: 20px;
+    padding: 5px 40px;
+    box-sizing: border-box;
+  }
+  /* contactここまで */
+
+}
+
+/* スマホを想定 */
+@media screen and (max-width: 480px) {
+
+  body {
+    min-width: 375px;
+  }
+
+  /* header */
+  .icon {
+    margin-left: 20px;
+  }
+
+  .icon .name {
+    display: none;
+  }
+
+  .header-right {
+    display: none;
+  }
+
+  /* headerここまで */
+
+  /* welcome */
+  .title {
+    font-size: 30px;
+  }
+
+  .guideline {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: normal;
+  }
+
+  .btn-group {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .btn {
+    height: 48px;
+    width: 140px;
+    margin-top: 20px;
+    margin-left: 0;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 10px;
+  }
+
+  .btn:first-child {
+    margin-top: 0;
+  }
+
+  /* welcomeここまで */
+
+  /* curriculum */
+  .sub-title {
+    font-size: 24px;
+  }
+
+  .img-box {
+    flex-flow: column nowrap;
+  }
+
+  .img-box li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .img-box li:first-child {
+    margin-top: 0;
+  }
+
+  .img-box li span {
+      font-size: 16px;
+      margin-top: 20px;
+  }
+
+  .swiper-container {
+    display: none;
+  }
+
+  .small-only {
+    display:block;
+  }
+  /* curriculumここまで */
+
+  /* contact */
+  .form .name, 
+  .form .email {
+    height: 30px;
+  }
+
+  .form .inquiry {
+    height: 50px;
+  }
+  /* contactここまで */
+
+  /* footer */
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .icon {
+    display: none;
+  }
+
+  footer .footer-right {
+    margin-right: 0;
+  }
+  /* footerここまで */
+
+  /* ハンバーガーメニュー */
+  .hamburger {
+    display: block;
+  }
+  /* ハンバーガーメニューここまで */
+}

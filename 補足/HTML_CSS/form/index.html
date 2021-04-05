@@ -1,0 +1,69 @@
+<!-- 
+  formの様々な種類と属性について学びます
+  forとid
+  name
+  value
+  required
+  checked
+-->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>フォーム</title>
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="container">
+    <h1>お問い合わせフォーム</h1>
+    <form action="">
+      <!-- dl 定義リスト -->
+      <dl>
+        <dt><label for="your-name">名前</label></dt>
+        <dd><input type="text" name="your-name" placeholder="山田　太郎" id="your-name" required></dd>
+        <dt><label for="your-tel">電話番号</label></dt>
+        <dd><input type="tel" placeholder="090-1234-5678" name="your-tel" id="your-tel"></dd>
+        <dt><label for="your-mail">メールアドレス</label></dt>
+        <dd><input type="email" placeholder="yamada@nexseed.net" name="your-mail" id="your-mail" required></dd>
+        <dt>興味のあること</dt>
+        <!-- checkbox -->
+        <dd>
+          <label><input type="checkbox" value="メールマガジン" name="kind">メールマガジン</label>
+          <label><input type="checkbox" name="kind" value="セミナー">セミナー</label>
+          <label><input type="checkbox" name="kind" value="その他">その他</label>
+        </dd>
+        <dt>あなたの年齢</dt>
+        <!-- selectbox -->
+        <dd>
+          <select name="age">
+            <option>年齢を選んでください</option>
+            <option value="20代">20代</option>
+            <option value="30代">30代</option>
+            <option value="40代">40代</option>
+            <option value="50代">50代</option>
+            <option value="60代">60代</option>
+          </select>
+        </dd>
+        <dt>性別</dt>
+        <!-- radioボタン -->
+        <dd>
+          <label><input type="radio" name="sex" value="男">男</label>
+          <label><input type="radio" name="sex" value="女">女</label>
+          <label><input type="radio" name="sex" value="その他">その他</label>
+        </dd>
+        <dt><label for="message">メッセージ</label></dt>
+        <dd><textarea name="message" id="message" placeholder="メッセージを200文字以内でお願いします"></textarea></dd>
+      </dl>
+      <div class="box text-center">
+        <p>プライバシーポリシー方針に同意の上フォームを送信してください。</p>
+        <p><label><input type="checkbox" name="privacy" value="yes" checked>プライバシーポリシーに同意する</label></p>
+      </div>
+      <p class="submit text-center"><input type="submit" value="送信"></p>
+    </form>
+  </section>
+</body>
+</html>

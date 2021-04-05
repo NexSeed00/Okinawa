@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Gridレイアウト</title>
+</head>
+<body>
+  <h2>基本のGridを理解する</h2>
+  <div class="sample1">
+    <header>A</header>
+    <aside>B</aside>
+    <main>C</main>
+  </div>
+
+  <h2 class="mt5">Gridでの余白の設定を理解する</h2>
+  <div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">9</div>
+  </div>
+  <h2 class="mt5">Gridのリピートを理解する</h2>
+  <h3 class="mt3">4つのアイテムを100px幅で配置する</h3>
+  <div class="sample2 nomal">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
+  <h3 class="mt3">repeatの数値をauto-fillにセットし、最小値100pxで最大値1frでの挙動</h3>
+  <div class="sample2 auto-fill">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
+  <h3 class="mt3">repeatの数値をauto-fitにセットし、最小値100pxで最大値1frでの挙動</h3>
+  <div class="sample2 auto-fit">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
+  
+  <h2 class="mt5">複雑なGridに名前をつけて処理をする</h2>
+  <div class="sample3">
+    <header></header>
+    <nav></nav>
+    <main></main>
+    <aside></aside>
+    <footer></footer>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+.container {
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.red {
+  /* rbg(r, g, b)それぞれの値は 0 ~ 255で数値が少ないほど暗い */
+  background-color: rgb(228, 57, 57);
+}
+
+.circle {
+  text-align: center;
+  padding-top: 30px;
+  box-sizing: border-box;
+  font-size: 30px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+
+.opacity1 {
+  background: #fff;
+  opacity: 0.3;
+}
+
+.opacity2 {
+  background-color: rgb(80,12,12);
+  opacity: .3;
+}
+
+.alpha1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  /*
+  absoluteとtransformを利用した要素のセンタリング
+  translateは％指定すると要素サイズを取得する。
+  なので-50%で要素の半分左に移動させることができる。
+  */
+  transform: translateX(-50%);
+  /* rbga(r, g, b, alpha) アルファ値は0 ~ 1の間で指定できる*/
+  background: rgba(255, 200,100, 0.4);
+}
+
+.alpha2 {
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  transform: translateX(-15%);
+  background-color: rgba(99, 150, 5, 0.4);
+}
+
+.alpha3 {
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  transform: translateX(-85%);
+  background-color: rgba(164, 243, 236, 0.4);
+}

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.bg {
+    background: url(../img/img.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 800px;
+}
+
+.bg > div {
+    color: #fff;
+}

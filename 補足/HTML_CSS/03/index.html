@@ -1,0 +1,35 @@
+<!-- 
+  border
+  boxsizing
+
+  widthとheightにはpaddingとborderは含まれない
+  含む場合はboxsizingを使う
+ -->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>練習3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header"></div>
+    <div class="clearfix">
+      <div class="sidebar"></div>
+      <div class="main">
+        <div class="top clearfix">
+          <div class="left">
+            <div class="hoge"></div>
+            <div class="fuga"></div>
+          </div>
+          <div class="right"></div>
+        </div>
+        <div class="bottom"></div>
+      </div>
+    </div>
+    <div class="footer"></div>
+  </div>
+</body>
+</html>

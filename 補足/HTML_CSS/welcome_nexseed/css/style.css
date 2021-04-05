@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+body {
+  color: #333333;
+  font-size: 16px;
+  font-family: 'YuGothic','Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif;
+}
+
+/* header固定 */
+/* 
+ 本来はidで実施する必要はない
+ 今回はidの使い方も覚えるため実施
+*/
+
+#fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#margin-for-fixed {
+  margin-top: 70px;
+}
+/* header固定ここまで */
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1dace0;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 0;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin-left: 80px;
+}
+
+.icon img {
+  height: 60px;
+}
+
+.icon .name strong {
+  color: #eae51f;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  margin-right: 80px;
+}
+
+.header-right li:first-child {
+  margin-right: 20px;
+}
+
+/* headerここまで */
+
+
+/* welcome */
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /* background-image: url(../img/background1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  background: url(../img/background1.jpg) no-repeat center center / cover;
+  height: 500px;
+  color: #fff;
+}
+
+.title{
+  font-size: 64px;
+}
+
+.guideline {
+  margin-top: 50px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.guideline li {
+  margin-top: 16px;
+}
+
+.guideline li:first-child {
+  margin-top: 0px;
+}
+
+.btn-group {
+  margin-top: 60px;
+}
+
+.btn {
+  height: 55px;
+  width: 170px;
+  margin-left: 120px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  font-size: 28px;
+  border-radius: 10px;
+}
+
+.btn:first-child {
+  margin-left: 0;
+}
+
+.register {
+  background-color: rgba(29, 172, 224, .5);
+  border: 3px solid rgba(29, 172, 224, .3);
+}
+
+.register:hover {
+  background-color: rgb(29, 172, 224);
+}
+
+.login {
+  background-color: rgba(236, 227, 35, .5);
+  border: 3px solid rgba(236, 227, 35, .3);
+}
+
+.login:hover {
+  background-color: rgb(236, 227, 35);
+}
+/* welcomeここまで */
+
+
+/* curriculum */
+.curriculum {
+  margin-top: 50px;
+}
+
+.sub-title {
+  text-align: center;
+  font-size: 36px;
+}
+
+.img-box {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.img-box li {
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+  text-align: center;
+}
+
+.img-box li:last-child {
+  margin-right: 0;
+}
+
+.img-box li img {
+  width: 300px;
+  height: auto;
+}
+
+.img-box li span {
+  font-size: 24px;
+  margin-top: 20px;
+}
+/* curriculumここまで */
+
+/* contact */
+.contact {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 350px;
+  margin-top: 50px;
+  background-color: #ebf4f5;
+}
+
+.contact .form {
+  margin: 50px 0 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact .form label{
+  display: block;
+  text-align: left;
+}
+
+.form .name {
+  margin-bottom: 20px;
+}
+
+.form .name, 
+.form .email {
+  margin-top: 10px;
+  display: block;
+  height: 50px;
+  width: 400px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.form-left {
+  margin-right: 50px;
+}
+
+.form .inquiry {
+  display: block;
+  margin-top: 10px;
+  height: 120px;
+  width: 400px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.contact button {
+  background-color: #1dace0;
+  color: #fff;
+  border: 3px solid #1dace0;
+  border-radius: 10px;
+  font-size: 24px;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  transition-duration: 500ms;
+}
+
+.contact button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #1dace0;
+  transition-duration: 500ms;
+}
+.submit {
+  text-align: center;
+}
+/* contactここまで */
+
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #233f51;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px;
+}
+
+footer .footer-right {
+  margin-right: 80px;
+}
+/* footerここまで */

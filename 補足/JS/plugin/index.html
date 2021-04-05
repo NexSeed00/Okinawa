@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>プラグイン</title>
+</head>
+<body>
+    <!-- 
+        いろいろjQueryのpluginがのってるサイト
+        https://jqueryhouse.com/
+     -->
+    <!-- 
+        Swiper
+        1.CDNで呼び込む
+        2.Get Startedの順番に従っておもむろに貼り付け
+        3.動作確認
+        4.http://idangero.us/swiper/demos/のswiperを実際に使う
+
+        しっかり実装すればこういうのもつくれる
+        https://www.willstyle.co.jp/DEMO/20170303/content01.html
+
+        他にもslickっていうのがある
+        http://kenwheeler.github.io/slick/
+    -->
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    <!-- 
+        jQuery Modal
+        http://jquerymodal.com/
+
+        他にもたくさんある
+        https://www.seleqt.net/design/free-modal-window-libraries-plugins/
+     -->
+    <!-- Modal HTML embedded directly into document -->
+    <div id="ex1" class="modal">
+        <p>Thanks for clicking. That felt good.</p>
+        <a href="#" rel="modal:close">Close</a>
+    </div>
+      
+    <!-- Link to open the modal -->
+    <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

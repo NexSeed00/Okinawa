@@ -1,0 +1,122 @@
+body {
+  background-color: #edf0f1;   
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  background: #69b7ce;
+}
+
+header input {
+  width: 80%;
+  color: #fff;
+  font-size: 15px;
+  text-indent: 18px;
+  background: rgba(255, 255, 255, .2);
+  border-radius: 25px;
+  border: none;
+}
+
+header input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+header i {
+  color: #fff;
+  cursor: pointer;
+}
+
+header i:hover {
+ opacity: .6;
+}
+
+/* headerここまで */
+
+.container {
+  padding: 15px;
+}
+
+.title {
+  margin: 15px 0;
+  padding-left: 3%;
+  color: #777;
+}
+
+/* todo一覧 */
+.list li {
+  font-size: 14px;
+  color: #444;
+  line-height: 22px;
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 10px;
+  padding: 14px 100px 14px 14px;
+  height: 50px;
+}
+
+.list li:last-child {
+  margin-bottom: 0;
+}
+
+/* 右側のボタン */
+.list li .buttons {
+  width: 100px;
+  height: 50px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.list li .buttons button {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+
+/* 線の間の境界線 */
+.done::before {
+  content: '';
+  width: 1px;
+  height: 30px;
+  background: #edf0f1;
+
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.list .remove {
+  color:#f00;
+}
+
+.list .done {
+  color:#69b7ce;
+}
+
+
+/* 完了済み一覧 */
+
+/* 未完了がないときの文字 */
+#not-yet:empty:after {
+  content: 'You have nothing to-do!';
+}
+
+/* 完了がないときの文字 */
+#done:empty:after {
+  content: 'You have yet to complete any tasks.';
+}
+
+ul.list#not-yet:after,
+ul.list#done:after {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}

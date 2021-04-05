@@ -1,0 +1,29 @@
+body {
+  display: grid;
+  grid-template-rows: 70px 600px 70px;
+  grid-template-columns: 300px 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 20px;
+}
+
+header {
+  grid-column: 1 / 3;
+  background-color: rgb(133, 74, 151);
+  text-align: center; /* 左右中央 */
+  line-height: 70px; /* 上下中央 heightと同じ値を指定する*/
+}
+
+aside {
+  grid-column: 1 / span 1;
+  background-color: rgb(140, 179, 175);
+}
+
+main {
+  grid-column: 2 / span 1;
+  background-color: rgb(201, 231, 193);
+}
+
+footer {
+  grid-column: 1 / 3;
+  background-color: rgb(221, 214, 119);
+}

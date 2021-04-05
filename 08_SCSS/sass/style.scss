@@ -1,0 +1,19 @@
+@import "./base/_reset";
+
+@import "./base/**";
+
+$hoge: 12px;
+
+h1 {
+    color: red;
+    font-size: $hoge;
+    .hoge {
+        font-size: 30px;
+    }
+}
+
+//test
+
+.hoge {
+    color: blue;
+}

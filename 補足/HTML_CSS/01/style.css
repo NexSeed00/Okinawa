@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: red;
+  height: 100px;
+  width: 100%;
+}
+
+.main {
+  margin-top: 100px;
+  background-color: blue;
+  height: 400px;
+}
+
+.main2 {
+  background-color: brown;
+  height: 400px;
+}
+
+.main3 {
+  background-color: skyblue;
+  height: 400px;
+}
+
+.footer {
+  background-color: green;
+  height: 100px;
+}

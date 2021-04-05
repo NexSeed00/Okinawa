@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery問題</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body class="container">
+    <div class="title-box">
+      <h1>jQuery問題</h1>
+      <p class="description">
+        このカリキュラムではjQueryというjavascriptのライブラリを使って、<br>
+        動きのあるwebサイトを作成する練習をします。<br><br>
+      </p>
+    </div>
+
+    <p class="description">
+      各問題の動作を確認して、自分でも同じものが作れるか挑戦してみましょう。<br>
+      どうしてもわからない場合、google chromeのディベロッパーツールで、
+      HTML, CSS, JavaScript全てのコードをみることができるので、どうなっているか確認してみましょう！！<br><br>
+      本カリキュラムの各問題を組み合わせることでいろいろな機能を実装できます。<br>
+      一通りカリキュラムの内容を見た後に、一度良く使うwebサービスなどがあれば確認してください。<br>
+      実際にどういった場面で使うかイメージできます。
+    </p>
+
+    <div class="q-box">
+      <h2>Q1.クリックで要素のサイズをかえる</h2>
+      <p class="description">
+        この例では簡単な例としてボタンのサイズを変えてるだけですが、<br>
+        クリックするだけで、要素の色をかえたり、非表示にしたりといろいろなことができます。
+      </p>
+      <div class="btn-wrapper">
+        <div id="js-click-btn" class="btn">ボタン</div>
+      </div>
+    </div>
+
+    <div class="q-box">
+      <h2>Q2.ホバーで要素の透明度を変更する</h2>
+      <p class="description">
+        文字や画像にカーソルが重なった時に、変化を出すことで<br>
+        ユーザーにクリックできるということが伝わりやすくなります。
+      </p>
+      <div class="btn-wrapper">
+        <div id="js-hover-btn" class="btn">ボタン</div>
+      </div>
+    </div>
+
+    <div class="q-box">
+      <h2>Q3.クリックで要素の表示非表示を切り替える</h2>
+      <p class="description">
+        ECサイトなどで、最初は商品の詳細を非表示にして、
+        ユーザーがクリックした時だけ表示するといった使い方ができます。
+      </p>
+      <div class="btn-wrapper">
+        <div id="js-show-btn" class="btn">表示</div>
+        <div id="js-hide-btn" class="btn">非表示</div>
+        <div class="box-wrapper">
+          <div id="js-target-element" class="box">これが消えるよ</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="q-box">
+      <h2>Q4.要素の追加</h2>
+      <p class="description">
+        SNSのようなサイトでコメントを投稿した時に、
+        画面をリロードせずにコメントを表示させる時などに使えます。
+        ※コメントを保存するには別の方法(Ajax)と組み合わせる必要があります。
+      </p>
+      <div class="btn-wrapper">
+        <ul>
+          <li id="js-add-btn" class="btn">追加</li>
+          <li id="js-add-btn2" class="btn">追加2</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="q-box">
+      <h2>Q5.toggle 黒いボタンをクリック</h2>
+      <p class="description">
+        下の例のように、最初に小項目を隠して大項目のみ表示したい時に使えます。
+      </p>
+      <div class="toggle-menu">
+        <dt class="js-toggle">関東</dt>
+        <dd>東京</dd>
+        <dd>千葉</dd>
+        <dd>埼玉</dd>
+        <dd>神奈川</dd>
+        <dd>茨城</dd>
+        <dd>栃木</dd>
+        <dd>群馬</dd>
+      </div>
+    </div>
+
+    <div class="q-box">
+      <h2>Q6.ハンバーガーメニュー</h2>
+      <p class="description">
+        スマートフォンサイトのヘッダーなどで良く使われます。
+        ※アニメーションはCSSです。
+      </p>
+      <div id="toggle" class="js-hamburger hamburger">
+        <span></span>
+      </div>
+    </div>
+
+    <div class="q-box">
+      <h2>Q7.スムーズスクロール</h2>
+      <p class="description">
+        ページTOPに戻るだけでなく、
+        ページ内の特定箇所に移動するときのアニメーションをつけることにも
+        使うことができます。
+      </p>
+      <div class="btn-wrapper">
+        <a class="btn js-scroll">ページTOPに戻る</a>
+      </div>
+    </div>
+
+    <div class="q-box">
+      <h2>Q8.モーダル</h2>
+      <p class="description">
+        webアプリにアカウント登録する際に重要事項を表示したりする
+      </p>
+      <div class="btn-wrapper modal-wrapper">
+        <div class="btn js-modal">ボタン</div>
+        <div class="modal-content">
+          <div class="modal-close js-modal-close">
+            <span>×</span>
+          </div>
+          <p>モーダル</p>
+        </div>
+        <div id="modal-bg" class="js-modal-close"></div>
+      </div>
+    </div>
+
+    <div class="q-box">
+      <h2>Q9.タブメニュー</h2>
+      <p class="description">
+        ニュースのようにジャンルごとにタブで分けたい場合などに使えます。
+      </p>
+      <div class="margin-left">
+        <ul class="tab-nav">
+          <li><a href="#tab01" class="active">HTML</a></li>
+          <li><a href="#tab02">CSS</a></li>
+          <li><a href="#tab03">Javascript</a></li>
+        </ul>
+        <div class="clearfix"></div>
+        <div class="tab-content">
+            <div id="tab01" class="active">
+              HTMLとは HTMLとは、Hyper Text Markup Language
+              （ハイパーテキスト・マークアップ・ランゲージ）の略で、
+              Webページを作るための最も基本的なマークアップ言語のひとつです。
+              普段、私たちがブラウザで観ているWebページのほとんどが、
+              HTMLで作られています。
+            </div>
+            <div id="tab02">
+              CSS（Cascading Style Sheets、カスケーディング・スタイル・シート）とは、
+              ウェブページのスタイルを指定するための言語です。
+            </div>
+            <div id="tab03">
+              JavaScript（ジャバスクリプト）とは、
+              プログラミング言語のひとつである。
+              Javaと名前が似ているが、全く異なるプログラミング言語である。
+              JavaScriptはプロトタイプベースのオブジェクト指向スクリプト言語であるが、
+              クラスなどのクラスベースに見られる機能も取り込んでいる。
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="q-box">
+      <h2>Q10.スライダー</h2>
+      <p class="description">
+        ECサイトなどで商品の画像を表示するときなどに使えます。<br>
+        ※以下では実施されてないですが、最初(最後)のスライドでは、<br>
+        スライドのためのボタンを非表示にすると使いやすくなります。
+      </p>
+      <div class="margin-left">
+        <div class="slider">
+          <div class="slide-wrapper">
+            <div class="slide"><span class="slide-text">1</span></div>
+            <div class="slide"><span class="slide-text">2</span></div>
+            <div class="slide"><span class="slide-text">3</span></div>
+            <div class="slide"><span class="slide-text">4</span></div>
+            <div class="slide"><span class="slide-text">5(最後)</span></div>
+          </div>
+          <span class="prev-slider"><</span>
+          <span class="next-slider">></span>
+        </div>
+      </div>
+    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./js/sample.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+.container div{
+  margin-bottom: 30px;
+}
+
+/* 基本のボタン */
+.btn {
+  display: inline-block;
+  background: orangered;
+  color: #ffffff;
+  padding: 20px 30px;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.btn i {
+  padding-right: 10px;
+}
+
+.default:hover {
+  opacity: 0.5;
+}
+
+.btn.border {
+  padding: 18px 28px;
+  border: 2px solid orangered;
+}
+
+.border:hover {
+  background: #fff;
+  color: orangered;
+}
+
+.radius {
+  border-radius: 5px;
+}

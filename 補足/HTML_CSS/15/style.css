@@ -1,0 +1,79 @@
+body {
+  display: grid;
+  grid-template-areas: 'header header'
+                       'side main'
+                       'footer footer';
+  grid-template-rows: 10% 1fr 10%;
+  grid-template-columns: 20% 1fr;
+  grid-gap: 10px;
+  height: 100vh;
+}
+
+header {
+  grid-area: header;
+  background-color: rgb(133, 74, 151);
+}
+
+main {
+  grid-area: main;
+  background-color: rgb(201, 231, 193);
+}
+
+.main-grid {
+  display: grid;
+  grid-template-rows: repeat(3, 170px);
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-gap: 4% 4%;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.main-grid > div {
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+aside {
+  grid-area: side;
+  background-color: rgb(140, 179, 175);
+}
+
+footer {
+  grid-area: footer;
+  background-color: rgb(221, 214, 119);
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 920px) {
+  .main-grid {
+    grid-template-rows: repeat(4, 20%);
+    grid-template-columns: 20% 20% 20%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .main-grid {
+    grid-template-rows: repeat(6, 15%);
+    grid-template-columns: 40% 40% ;
+    grid-gap: 2%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    grid-template-areas: 'header'
+                         'main'
+                         'side'
+                         'footer';
+    grid-template-rows: 10% 1fr auto 10%;
+    grid-template-columns: auto;
+  }
+
+  .main-grid {
+    grid-template-rows: repeat(12, 7.5%);
+    grid-template-columns: 80%;
+    grid-gap: 1%;
+  }
+}

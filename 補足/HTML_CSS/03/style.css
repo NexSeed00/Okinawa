@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: red;
+  height: 100px;
+  width: 800px;
+}
+
+.sidebar {
+  float: left;
+  background-color: yellow;
+  padding: 20px;
+  height: 400px;
+  width: 200px;
+  border: 5px solid black;
+  box-sizing: border-box;
+}
+
+
+.main {
+  float: right;
+  background-color: blue;
+  height: 400px;
+  width: 600px;
+}
+
+.footer {
+  background-color: green;
+  height: 100px;
+  width: 800px;
+}
+
+.top {
+  height: 300px;
+  background-color: lightgreen;
+}
+
+.left {
+  float: left;
+  height: 300px;
+  width: 300px;
+  background-color: skyblue;
+}
+
+.right {
+  float: right;
+  height: 300px;
+  width: 300px;
+  background-color: purple;
+}
+
+.bottom {
+  height: 100px;
+  background-color: brown;  
+}
+
+.hoge {
+  height: 200px;
+  background-color: pink;
+}
+
+.fuga {
+  height: 100px;
+  background-color: gray;
+}
